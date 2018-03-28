@@ -6,13 +6,23 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>details</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+    <ion-navbar>
+      <ion-title>details</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-card>
+      <img [src]="film.image"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{film.title}}
+          </ion-card-title>
+        <p>
+          {{film.author}}, {{film.date}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

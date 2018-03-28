@@ -19,8 +19,8 @@
       </ion-thumbnail>
       <h2>{{current.title}}</h2>
       <p> {{current.author}}, {{current.date}}</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
+      <button ion-button clear item-end [navPush]="pushPage" [navParams]="{film:current}">view</button>
+    </ion-item> 
   </ion-list>
 
 </ion-content>
