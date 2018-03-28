@@ -15,10 +15,10 @@
     <ion-item *ngIf="result.length < 1"> aucun resultat</ion-item>
     <ion-item *ngFor="let current of result">
       <ion-thumbnail item-start>
-        <img [src]="current.image">
+        <img [src]="current.poster_path">
       </ion-thumbnail>
-      <h2>{{current.title}}</h2>
-      <p> {{current.author}}, {{current.date}}</p>
+      <h2>{{current.original_title}}</h2>
+      <p> {{current.release_date}}</p>
       <button ion-button clear item-end [navPush]="pushPage" [navParams]="{film:current}">view</button>
     </ion-item> 
   </ion-list>
